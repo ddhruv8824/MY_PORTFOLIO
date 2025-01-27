@@ -1,0 +1,155 @@
+/**
+ * ProjectCard.css
+ *
+ * @format
+ */
+
+.project-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.project-card {
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.project-card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-card-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-card-tech {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.project-card-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.project-link img {
+  width: 20px;
+  height: 20px;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .project-card-container {
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 100%; /* Make the card take full width on smaller screens */
+    height: auto; /* Let the height adjust automatically */
+    margin: 10px 0; /* Margin on top and bottom */
+  }
+
+  .project-card-img img {
+    height: 200px; /* Adjust image size for smaller screens */
+  }
+
+  .project-card-title {
+    font-size: 1.2rem; /* Adjust title font size */
+  }
+
+  .project-card-description {
+    font-size: 0.9rem; /* Adjust description font size */
+  }
+
+  .project-card-tech {
+    font-size: 0.8rem; /* Adjust tech font size */
+  }
+
+  .project-card-links {
+    gap: 10px; /* Adjust spacing between links */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .project-card-container {
+    padding: 5px;
+  }
+
+  .project-card {
+    width: 100%; /* Make the card full width */
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .project-card-img img {
+    height: 180px; /* Further adjust image size */
+  }
+
+  .project-card-title {
+    font-size: 1rem; /* Smaller title font size */
+  }
+
+  .project-card-description {
+    font-size: 0.85rem; /* Smaller description font size */
+  }
+
+  .project-card-tech {
+    font-size: 0.75rem; /* Smaller tech font size */
+  }
+
+  .project-card-links {
+    gap: 8px; /* Adjust link gap for smaller screens */
+  }
+}

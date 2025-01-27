@@ -1,0 +1,16 @@
+.skillCard {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    object-fit: cover;
+    margin-bottom: 15px; /* Add spacing between cards */
+  }
+  
+  .skillCardImage {
+    width: 100% ;/* Adjust image size as needed */
+    height: 100%;
+    margin-bottom: 5px;
+  }
+  

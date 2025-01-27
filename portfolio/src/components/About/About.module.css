@@ -1,0 +1,59 @@
+/** @format */
+
+.aboutContainer {
+  width: 100%;
+  background-color: #6f00ff;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#AboutTitle {
+  margin-top: 5px;
+  font-size: 4vw; /* Scales with viewport width */
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-align: center; /* Center-align title */
+}
+
+#AboutSkill {
+  margin-top: 115px;
+  font-size: 4vw; /* Scales with viewport width */
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-align: center; /* Center-align title */
+}
+
+.para {
+
+  width: 70%; /* Increased width for better readability on smaller screens */
+  font-size: 2.5vh; /* Use rem for scalable font size */
+  font-family: "Roboto Slab", serif;
+  font-weight: 300; /* Use numeric value for lighter weight */
+  color: white;
+  text-align: justify; /* Align text for better flow */
+  margin-bottom: 0px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #AboutTitle {
+    font-size: 6vw;
+  }
+  .para {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  #AboutTitle {
+    font-size: 8vw;
+  }
+  .para {
+    font-size: 1rem;
+  }
+}
+.contactcard {
+  width: 80%;
+}

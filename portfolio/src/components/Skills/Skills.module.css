@@ -1,0 +1,80 @@
+/** @format */
+
+/* Container styling */
+.container {
+  margin-top: -500px;
+  height: auto; /* Adjust height dynamically */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Add padding for smaller screens */
+}
+
+/* Inner container margin */
+.inncon {
+  margin-top: 50px;
+}
+
+/* Main content grid */
+.main_content {
+  gap: 20px; /* Adjust gap for better spacing on small screens */
+  height: auto; /* Dynamic height for responsive design */
+  border-radius: 20px;
+  background-color: white;
+  width: 90%; /* Full width on small screens */
+  padding: 20px; /* Add padding */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px -4px 8px rgba(0, 0, 0, 0.1),
+    4px 0px 8px rgba(0, 0, 0, 0.1), -4px 0px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default for medium/large screens */
+  justify-content: center; /* Center the grid in the container */
+  justify-items: center; /* Center items inside the grid */
+}
+
+/* Skill title styling */
+#Skilltitle {
+  margin-top: 115px;
+  font-size: 4vw; /* Scales with viewport width */
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-align: center; /* Center-align title */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .main_content {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+
+  #Skilltitle {
+    font-size: 6vw; /* Slightly larger title for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .main_content {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+    gap: 15px; /* Adjust gap for smaller screens */
+    width: 100%; /* Full width */
+    padding: 10px; /* Reduce padding for smaller devices */
+  }
+
+  #Skilltitle {
+    font-size: 8vw; /* Bigger title for smaller screens */
+  }
+
+  .container {
+    margin-top: -200px; /* Adjust negative margin for smaller screens */
+    padding: 10px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .main_content {
+    gap: 10px; /* Compact spacing for very small screens */
+  }
+
+  #Skilltitle {
+    font-size: 10vw; /* Adapt title size for very small screens */
+  }
+}

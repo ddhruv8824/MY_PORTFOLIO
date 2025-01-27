@@ -1,0 +1,102 @@
+/** @format */
+
+/* Reset and universal styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensures consistent sizing */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Default fallback font */
+}
+
+.title {
+  margin-top: 5vw; /* Use viewport width for responsiveness */
+  text-align: center; /* Center align title text */
+}
+
+.homeContainer {
+  margin-top: 5vw;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers content vertically */
+  padding: 0 5vw; /* Adds padding for smaller screens */
+}
+
+#homeName {
+  font-size: 3vw; /* Responsive font size based on viewport width */
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+.animatedtext {
+  width: 100%; /* Ensure it adapts to container width */
+  max-width: 600px; /* Limit maximum width */
+  font-size: 2vw; /* Responsive font size */
+  font-family: "Roboto Slab", serif;
+  overflow: hidden;
+  border-right: solid orange;
+  white-space: nowrap;
+  margin: 1em auto;
+  animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.profilepiccontainer {
+  margin-top: 5vw;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilepic {
+  width: 300px; /* Set equal width and height */
+  height: 300px;
+  border-radius: 50%; /* Makes the picture perfectly round */
+  object-fit: cover; /* Prevents image distortion */
+}
+
+.image2 {
+  margin-top: 5vw;
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .homeContainer {
+    margin-top: 25vw; /* Adjust for smaller screens */
+  }
+  #homeName {
+    font-size: 6vw; /* Responsive font size based on viewport width */
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+  }
+  .animatedtext {
+    font-size: 3vw; /* Responsive font size */
+    border-right: solid orange;
+  }
+}

@@ -1,0 +1,95 @@
+/** @format */
+
+.contactCardContainer {
+  margin: 100px auto; /* Centers the container on the page */
+  width: 90%;
+  height: auto; /* Adjust height automatically based on content */
+  background-color: #ffffff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px; /* Adds space around the content */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleee {
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Makes the text look modern */
+}
+
+.contact-infoo {
+  width: 100%;
+}
+
+.line-mff {
+  width: 50px;
+  height: 4px;
+  background-color: #6f00ff;
+  border-radius: 2px;
+}
+
+.contactcontents {
+  width: 100%;
+  text-align: left;
+}
+
+.contact-lisst {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between items */
+  font-size: 1.1rem;
+  font-family: "Roboto Slab", serif;
+  color: #555555;
+}
+
+.contact-lisst li {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icon and text */
+  line-height: 1.5; /* Better readability */
+}
+
+.contact-lisst li span {
+  font-weight: bold;
+  color: #333333;
+}
+
+.contact-lisst .icon {
+  font-size: 1.5rem;
+  color: #6f00ff; /* Matches the accent color */
+}
+
+@media (max-width: 768px) {
+  .contactCardContainer {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .titleee {
+    font-size: 1.5rem;
+  }
+
+  .contact-lisst {
+    font-size: 1rem;
+  }
+
+  .contact-lisst .icon {
+    font-size: 1.2rem;
+  }
+}

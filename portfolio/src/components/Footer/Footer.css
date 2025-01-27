@@ -1,0 +1,263 @@
+/** @format */
+
+.FooterContainer {
+  height: 800px;
+}
+
+.contactSection {
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6f00ff;
+}
+
+.contactCard {
+  width: 70%;
+  height: 400px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  padding: 20px;
+}
+
+.leftcard {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lefttitle,
+.rigthtitle {
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.contact-info {
+  height: 300px;
+  width: 80%;
+}
+
+.line-mf {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: #6f00ff;
+  margin-top: 10px;
+}
+
+.rightcard {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.message-card .whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #25d366;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.message-card .whatsapp-link img {
+  width: 36px;
+  height: 36px;
+}
+
+.message-card .whatsapp-link:hover {
+  color: #128c7e;
+}
+
+.Reserved {
+  background-color: black;
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-list {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 1.5rem;
+  font-family: "Roboto Slab", serif;
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list .icon {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #6f00ff;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 2rem;
+  color: #6f00ff;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link i {
+  font-size: 2.5rem;
+}
+
+.social-link:hover {
+  color: #333;
+  transform: scale(1.1);
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-family: "Roboto Slab", serif;
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .contactCard {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .leftcard,
+  .rightcard {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .lefttitle,
+  .rigthtitle {
+    font-size: 1.2rem;
+  }
+
+  .contact-list li {
+    font-size: 1rem;
+  }
+
+  .contact-list .icon {
+    font-size: 1.2rem;
+  }
+
+  .social-link i {
+    font-size: 1.8rem;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+  }
+
+  .message-card {
+    margin-top: 20px;
+  }
+}
+
+/* Tablet Devices */
+@media (max-width: 768px) {
+  .contactCard {
+    width: 80%;
+  }
+
+  .leftcard,
+  .rightcard {
+    width: 50%;
+  }
+
+  .lefttitle,
+  .rigthtitle {
+    font-size: 1.4rem;
+  }
+
+  .contact-info {
+    width: 90%;
+  }
+
+  .contact-list li {
+    font-size: 1.2rem;
+  }
+
+  .social-link i {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1.3rem;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  .contactCard {
+    width: 70%;
+  }
+
+  .leftcard,
+  .rightcard {
+    width: 50%;
+  }
+
+  .lefttitle,
+  .rigthtitle {
+    font-size: 1.5rem;
+  }
+
+  .contact-list li {
+    font-size: 1.5rem;
+  }
+
+  .contact-list .icon {
+    font-size: 1.5rem;
+  }
+
+  .social-link i {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1.5rem;
+  }
+}
